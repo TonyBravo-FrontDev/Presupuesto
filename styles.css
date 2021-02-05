@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2 {
+    color: #079992;
+    font-weight: 500;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+    background-color: #1e272e;
+}
+
+/* Container form */
+
+.container {
+    width: 70%;
+    padding: 1rem;
+    display: grid;
+    column-gap: 3rem;
+    grid-template-columns: 40%  40%;
+    justify-content: center;
+    border-radius: 32px;
+    background-color: #ffffff;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-form #formulario {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+#formulario .input-form {
+    border: none;
+    margin: 1rem;
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: 2px solid #cccccc;
+}
+
+#formulario #enviar {
+    margin: 1rem;
+    padding: 18px 0px;
+    border: none;
+    font-size: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #2d98da;
+    transition: all 0.6s ease;
+}
+
+#formulario #enviar:hover {
+    transition: all 0.6s ease;
+    background-color: #4bb1fa;
+}
+
+/* Container result */
+
+.container-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-result .listado {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+.listado .list-group .list-group-item {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #242424;
+    border-radius: 4px;
+    border: 2px solid #eeeeee;
+    background-color: #ffffff;
+}
+
+.list-group-item .btn-delete {
+    border: none;
+    padding: 12px 15px;
+    color: white;
+    border-radius: 62px;
+    background-color: #ff4d4d;
+}
+
+.container-presupuestos {
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#presupuesto {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(32, 135, 253);
+    background-color: #0084ff31;
+}
+
+#restante {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.danger {
+    color: #ff4d4d;
+    background-color: #ff4d4d56;
+}
+
+.warning {
+    color: #1d1d1d;
+    background-color: #fff20048;
+}
+
+.error {
+    color: #ffffff;
+    background-color: #ff4d4d;
+}
+
+.success {
+    color: #ffffff;
+    background-color: #20bf6a;
+}
+
+.alert {
+    width: 90%;
+    height: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+}
+

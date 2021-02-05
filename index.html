@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <title>Administrador de Presupuesto</title>
+</head>
+<body>
+    <section class="container">
+        <div class="container-form">
+            <h2>Añade gastos Aquí</h2>
+            <div class="alerta-form"></div>
+            <form id="formulario">
+                <input class="input-form" id="campo-gasto" type="text" placeholder="Nombre gasto"/>
+                <input class="input-form" id="campo-cantidad" type="text" placeholder="Cantidad en $"/>
+                <input id="enviar" type="submit" value="Agregar"/>
+            </form>
+        </div>
+        <div class="container-result">
+            <h2>Listado</h2>
+            <div class="listado">
+                <ul class="list-group"></ul>
+            </div>
+            <div class="container-presupuestos">
+                <div id="presupuesto">
+                    <strong>Presupuesto: $</strong>
+                    <p></p>
+                </div>
+                <div id="restante" class="success">
+                    <strong>Restante: $</strong>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
